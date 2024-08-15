@@ -1,4 +1,4 @@
-import { aboutImg } from "../assets/about.jpg";
+import aboutImg from "../assets/about.jpg"
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 lp:p-8">
           <div className="flex flex-center justify-center">
-            <img src={aboutImg} alt="" />
+            <img src={aboutImg} alt="" />  
           </div>
         </div>
       </div>

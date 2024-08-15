@@ -12,13 +12,12 @@ const About = () => {
           <div className="flex flex-center justify-center">
             <img className="rounded-2xl" src={aboutImg} alt="" />
           </div>
-          
         </div>
         <div className="w-full lg:w-1/2">
-            <div className="flex justify-center lg:justify-start">
-                <p className="my-2 max-w-xl py-6" >{ABOUT_TEXT}</p>
-            </div>
+          <div className="flex justify-center lg:justify-start">
+            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
           </div>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { SiLaravel } from "react-icons/si"; // Import Laravel icon
 import { SiMongodb } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
@@ -50,7 +50,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandNextjs className="text-7xl" />
+          <SiLaravel className="text-7xl text-red-600" /> {/* Laravel Icon */}
         </motion.div>
         <motion.div
           variants={iconVariants(5)}

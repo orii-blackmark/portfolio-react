@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilepic from "../assets/KevinRushProfile.png";
+import profilepic from "../assets/orielProfile.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -10,6 +10,7 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -36,21 +37,23 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light "
+              className="my-2 max-w-xl py-6 font-light"
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+          <div className="relative flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               src={profilepic}
               alt="Oriel Kiplangat"
+              className="rounded-lg"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
           </div>
         </div>
       </div>
